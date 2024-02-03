@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
+import { useOnlineStatus } from './hooks/useOnlineStatus';
+
 import './App.css';
-import { useOnlineStatus } from './IsOnline';
 
 function App() {
 
@@ -20,7 +21,7 @@ function App() {
 
   return (
     <>
-      <div id='app'style={{ backgroundColor: isOnline ? '#2ecc71' : '#e74c3c' }}>
+      <div id='app' style={{ backgroundColor: isOnline ? '#2ecc71' : '#e74c3c' }}>
         {isOnline ? <h1>Online</h1> : <h1>Offline</h1> }
       </div>
     </>

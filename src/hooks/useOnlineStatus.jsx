@@ -6,17 +6,14 @@ export const useOnlineStatus = () =>
 
   useEffect(() => 
   {
-    // create event handler
     const handleStatusChange = () => 
     {
       setOnline(navigator.onLine);
     };
 
-    // listen for online and offline event
     window.addEventListener('online', handleStatusChange);
     window.addEventListener('offline', handleStatusChange);
 
-    // clean up to avoid memory-leak
     return () => 
     {
       window.removeEventListener('online', handleStatusChange);

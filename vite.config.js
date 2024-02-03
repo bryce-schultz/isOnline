@@ -10,7 +10,7 @@ const manifestForPlugin = {
     "short_name": "isOnline",
     "description": "Tells you if you are online or not",
     "background_color": "#fff",
-    "theme_color": "#000",
+    "theme_color": "#ffffff",
     "icons": [
       {
        "src": "assets/icons/icon-48x48.png",
