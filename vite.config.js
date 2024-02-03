@@ -65,7 +65,13 @@ const manifestForPlugin = {
        "sizes": "512x512",
        "type": "image/png",
        "purpose": "maskable any"
-       }
+       },
+       {
+        "src": "assets/icons/is-online-source.svg",
+        "sizes": "any",
+        "type": "image/svg+xml",
+        "purpose": "maskable any"
+        }
     ],
     "scope": "/",
     "start_url": "/",
